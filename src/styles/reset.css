@@ -1,0 +1,63 @@
+/* Reset básico para eliminar márgenes, rellenos y bordes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Elimina el borde alrededor de los elementos enfocados en navegadores como Chrome */
+  *:focus {
+    outline: none;
+  }
+  
+  /* Establece un fondo blanco y un color de texto base para el body */
+  html, body {
+    height: 100%;
+    font-size: 100%;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #000;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Elimina el estilo de lista en todos los elementos <ul> y <ol> */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Elimina subrayados de los enlaces */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Establece imágenes y videos para usar todo su ancho disponible */
+  img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Asegura que los botones no tengan estilos por defecto */
+  button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  /* Hace que los inputs, botones y selects tengan un diseño consistente */
+  input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+  }
+  
+  /* Asegura que los bloques de citas (<blockquote>) no tengan márgenes predeterminados */
+  blockquote, q {
+    quotes: none;
+  }
+  
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+  }
