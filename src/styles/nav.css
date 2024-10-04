@@ -1,0 +1,41 @@
+.cnt-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+}
+
+.cnt-nav .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.cnt-nav .info-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cnt-nav .cnt-image {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.cnt-nav .cnt-image img {
+    border-radius: 50%;
+}
+
+.cnt-nav .info-user .cnt-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cnt-nav .info-user .name {
+    font-size: 1.25rem;
+}
+
+.cnt-nav .info-user .role {
+    color: #888;
+    font-size: .75rem;
+}

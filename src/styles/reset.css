@@ -12,7 +12,6 @@
   
   /* Establece un fondo blanco y un color de texto base para el body */
   html, body {
-    height: 100%;
     font-size: 100%;
     line-height: 1.5;
     background-color: #fff;
