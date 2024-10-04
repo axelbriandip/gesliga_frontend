@@ -1,0 +1,9 @@
+.cnt-footer {
+     margin-top: 2rem;
+}
+
+.cnt-footer .text{
+     display: flex;
+     justify-content: space-between;
+     padding: 1rem 2rem;
+}
