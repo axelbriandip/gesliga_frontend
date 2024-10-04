@@ -7,14 +7,14 @@ import './styles/App.css'
 // pages
 import Login from './pages/Login';
 import Home from './pages/Home';
-import Nav from './components/Nav';
+// import Nav from './components/Nav';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <div className='App'>
       <BrowserRouter>
-        <Nav/>
+        {/* <Nav/> */}
           <Routes>
             <Route path='/login' element={<Login/>}/>
             <Route path='/' element={<Home/>}/>
