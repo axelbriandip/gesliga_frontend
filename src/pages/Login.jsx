@@ -1,9 +1,13 @@
 import '../styles/login.css';
 import axios from 'axios';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 const Login = () => {
-	const [username, setUsername] = useState('axelbd');
+	const navigate = useNavigate();
+
+	const [username, setUsername] = useState('axelbdip');
 	const [password, setPassword] = useState('melash18');
 
 	const API_URL = 'http://localhost:3000/api/v1';
@@ -19,6 +23,7 @@ const Login = () => {
 		try {
 			const response = await api.post('/users/login', { username, password });
 			console.log(response.data.data)
+			navigate("/panel-admin")
 		} catch (err) {
 			if (err.response && err.response.status === 401) {
 				// Esto significa que el error es un 400 y probablemente es un problema con el login
