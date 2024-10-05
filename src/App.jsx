@@ -24,7 +24,7 @@ function App() {
   return (
     <div className='App'>
       <BrowserRouter>
-        <Nav/>
+        <Nav />
           <Routes>
             <Route path='/login' element={<Login setUser={setUser}/>}/>
             <Route path='/' element={<Home/>}/>
