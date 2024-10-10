@@ -1,0 +1,39 @@
+.cnt-panelAdmin .header {
+    margin-bottom: 2rem;
+}
+
+.cnt-panelAdmin .header h3 {
+    color: #555;
+    font-weight: 300;
+}
+
+.cnt-panelAdmin .cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cnt-panelAdmin .cards .card-pageTarget {
+    width: 14rem;
+    height: 7rem;
+    padding: .5rem;
+    border-radius: .3rem;
+    background-color: #fff;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: .2s all;
+}
+
+.cnt-panelAdmin .cards .card-pageTarget:hover {
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+.cnt-panelAdmin .cards .card-pageTarget .title {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.cnt-panelAdmin .cards .card-pageTarget .description {
+    color: #222;
+}
