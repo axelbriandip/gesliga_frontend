@@ -1,7 +1,22 @@
 import '../styles/users.css'
+import { getUsersThunk } from '../store/slices/user.slice'
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 
 const Users = () => {
+    const dispatch = useDispatch()
     
+    useEffect(() => {
+        dispatch(getUsersThunk())
+    }, []);
+
+    const userLogged = useSelector((state) => state.users.setUserLogged);
+    const usersList = useSelector((state) => state.users.usersList);
+
+    console.log(userLogged);
+    console.log(usersList);
+    
+
     return (
         <section className="cnt-users">
             <div className="header">

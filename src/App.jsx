@@ -3,7 +3,6 @@ import {
   Route,
   BrowserRouter
 } from 'react-router-dom';
-import { useState } from 'react'
 
 // styles
 import './styles/reset.css'
@@ -17,22 +16,21 @@ import Login from './pages/Login';
 import PanelAdmin from './pages/PanelAdmin';
 import PanelDelegate from './pages/PanelDelegate';
 import PanelGuest from './pages/PanelGuest';
-import Users from './pages/users';
+import Users from './pages/Users';
 
 function App() {
-  const [user, setUser] = useState(null); // Estado para el usuario logueado
 
   return (
     <div className='App'>
       <BrowserRouter>
         <Nav />
           <Routes>
-            <Route path='/login' element={<Login setUser={setUser}/>}/>
+            <Route path='/login' element={<Login/>}/>
             <Route path='/' element={<Home/>}/>
-            <Route path='/panel-admin' element={<PanelAdmin user={user}/>}/>
-            <Route path='/panel-delegate' element={<PanelDelegate user={user}/>}/>
-            <Route path='/panel-guest' element={<PanelGuest user={user}/>}/>
-            <Route path='/users' element={<Users user={user}/>}/>
+            <Route path='/panel-admin' element={<PanelAdmin/>}/>
+            <Route path='/panel-delegate' element={<PanelDelegate/>}/>
+            <Route path='/panel-guest' element={<PanelGuest/>}/>
+            <Route path='/users' element={<Users/>}/>
           </Routes>
         <Footer/>
       </BrowserRouter>
