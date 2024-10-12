@@ -1,2 +1,14 @@
-.cnt-users {
+.container-users table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.container-users th, .container-users td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.container-users th {
+    background-color: #f2f2f2;
+    text-align: left;
 }
