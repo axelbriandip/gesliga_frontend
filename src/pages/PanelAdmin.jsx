@@ -7,15 +7,15 @@ const PanelAdmin = ({user}) => {
         <section className="cnt-panelAdmin">
             <div className="header">
                 <h1>Panel de Administrador</h1>
-                <span>Bienvenido {user.first_name} {user.last_name}</h3>
+                <span>Bienvenido</span>
             </div>
             <div className="cards">
-                <CardPagesTarget title="Usuarios" description="Explicación de usuarios"/>
-                <CardPagesTarget title="Clubes" description="Explicación de clubes"/>
-                <CardPagesTarget title="Mercado de pases" description="Explicación de pases"/>
-                <CardPagesTarget title="Sanciones" description="Explicación de sanciones"/>
-                <CardPagesTarget title="Historial campeones" description="Explicación de campeones"/>
-                <CardPagesTarget title="Configuración liga" description="Explicación de config"/>
+                <CardPagesTarget target="users" title="Usuarios" description="Explicación de usuarios"/>
+                <CardPagesTarget target="clubs" title="Clubes" description="Explicación de clubes"/>
+                <CardPagesTarget target="passes" title="Mercado de pases" description="Explicación de pases"/>
+                <CardPagesTarget target="sanctions" title="Sanciones" description="Explicación de sanciones"/>
+                <CardPagesTarget target="champions" title="Historial campeones" description="Explicación de campeones"/>
+                <CardPagesTarget target="config-league" title="Configuración liga" description="Explicación de config"/>
             </div>
         </section>
     );

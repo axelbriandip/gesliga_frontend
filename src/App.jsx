@@ -17,6 +17,7 @@ import Login from './pages/Login';
 import PanelAdmin from './pages/PanelAdmin';
 import PanelDelegate from './pages/PanelDelegate';
 import PanelGuest from './pages/PanelGuest';
+import Users from './pages/users';
 
 function App() {
   const [user, setUser] = useState(null); // Estado para el usuario logueado
@@ -31,6 +32,7 @@ function App() {
             <Route path='/panel-admin' element={<PanelAdmin user={user}/>}/>
             <Route path='/panel-delegate' element={<PanelDelegate user={user}/>}/>
             <Route path='/panel-guest' element={<PanelGuest user={user}/>}/>
+            <Route path='/users' element={<Users user={user}/>}/>
           </Routes>
         <Footer/>
       </BrowserRouter>
