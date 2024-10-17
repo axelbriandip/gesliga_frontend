@@ -13,14 +13,16 @@ const Login = () => {
 	const [password, setPassword] = useState('melash18');
 
 	const API_URL = 'http://localhost:3000/api/v1';
-
+	
 	const handleLogin = async (e) => {
 		e.preventDefault();
 
 		axios.post(`${API_URL}/users/login`, { username, password })
 			.then(res => {
+				// Establece el usuario en el estado de Redux
 				dispatch(setUserLogged(res.data.data.user));
-				alert("User logged")
+
+				alert("User logged");
 
 				const role = res.data.data.user.role;
 				if(role == 'admin') navigate("/panel-admin")
